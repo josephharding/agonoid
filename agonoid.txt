@@ -1,0 +1,196 @@
+
+6/27/10
+-added in galaxy image
+-optimized (fixed, really) the scripting tools
+-added in the basic design for level 1 and 2
+
+
+6/26/10
+-changed the way bomb works, no longer a hidden block, now just a distance calculation in level like Beam
+-added a non homing projectile for phantom, improved phantom teleporting
+-replaced several event listeners with "weakly referenced" listeners, should be less likely to go un-removed after use
+-created a truce mode to activate during scripts, no firing, little white flag appears at bottom of screen
+
+6/20/10
+-added in teleport for Phantom (plus the art for "tele in" and "tele out"
+-added in spreadshot for gunship and improved "bullet to masterbullet" handling
+-slightly improved enemyship abstract class, though that whole deal needs work still
+
+
+6/19/10
+-added animation for all Gothic ships, and the Proto (but the Proto sucks, ship and animation, might cut it out)
+-fixed minor weapon switching bug
+-added laser explosion when hits Gunship
+
+
+5/30/10
+-added in hostility/non-hostility function with holograph weapon and enemies
+-wrote out basic story
+
+5/29/10
+-finished "Dakota" ship
+
+TO DO:
+-design levels, campaign
+	-create new content to match story, missions
+-animate death, weapons of goth-tech enemies
+
+5/28/10
+-reduced and simplified lives counter, now just a text box
+-added in weapon switching and current weapon (next to lives at bottom of screen)
+
+5/27/10
+-created new faction, dirty, gothic technology faction
+-created "garbage collector ship", have no idea what to do with that...
+
+5/26/10
+-added in scripts, basic movement, transmissions so far
+
+5/25/10
+-fully implemented transmissions with XMLs
+
+5/23/10
+-added in beam weapon
+
+TO DO:
+-make level intro text less lame
+-player can switch between weapons
+
+5/22/10
+-improved bomb design, kills enemies, rotates to face player, explodes within proximity
+
+TO DO:
+-make level intro text less lame
+-? in game text, missions, factions ?
+-more player weapons
+-align death animations more precisely
+
+5/21/10
+-added in Defender enemy
+-added in Gaurdian enemy
+-optimized PNG of bomb explosion so as to be not so frikin' huge and laggy
+-created photon torpedo (homing)
+
+BUGS:
+-after several rounds the game starts to lag, I suspect something is building up in memory (though I haven't been able to reproduce this error on my machine)
+-high score text on menu is buggy, jumps around when mouse moves on and off swf view
+
+TO DO:
+-add "after burner" effect
+-create more enemies (exact number TBD)
+-create smaller screen size
+-get unique sounds for each item (send video clip of each enemy fighting and dying to Conor)
+-make level intro text less lame
+-in game text, missions, factions
+-more player weapons
+-what if we made three factions? Then enemies from each could fight, would be cool, though hard...
+	-xml "events" where new factions would arrive and begin to destroy the other faction
+
+
+3/20/10 (BETA RELEASE)
+-updated quotes
+-fixed numerous bugs
+-optimized AnimatedSprite class
+-added in collision system for bomb (not homing)
+-set up html hosting on alchemicstudio.org
+
+
+3/19/10
+-randomized drone shooting to make it less uniform
+-optimized the collision system
+-added in bomber and bomb
+--tried making bomb explode and explosion collidable, but lagged game
+--plan on making bomb homing instead
+
+
+3/18/10 (into the AM)
+-intermediate damage animation done (shield)
+-level "landmarks" code done
+-added in collision between player ship and enemies
+-game over screen is acceptable
+-can now exit during "story screen"
+-cleaned up eventListeners when quit/win
+-made credits awesome
+-fixed a long standing problem with removeEnemy
+-spruced up fighter and drone enemies
+TO DO
+-general testing/debuging
+-CONTENT(new ships, bullets, animations, sounds)
+
+
+3/17/10
+-added in badass high score system (uses database on alchemicstudio.org and php)
+-figured out bug with capital letters preventing library path finding once files are uploaded
+-started "game over" screen when you win, enter name saved with score
+-figured out that art assets have to "export for actionscript" under Library
+-can no longer fire while "story screen" is up
+TO DO
+-intermediate damage animation
+-game over screen
+-level "landmarks"
+-collision between player ship and enemies
+-CONTENT(new ships, bullets, animations, sounds)
+
+
+3/16/10
+-fixed lasers-hitting-enemy-bullets-taking-player-lives bug
+-added in "Challenge" basic functionality, will switch levels when you win (as opposed to quit)
+-added persistent lives in challenge
+-you can now die
+-added in "tween screens" which tell story
+-added in score (still no high score)
+-player ship and "lives ships" are now layered above enemies
+TO DO
+-intermediate damage animation
+--game over screen
+-level "landmarks"
+-collision between player ship and enemies
+-CONTENT(new ships, bullets, animations, sounds)
+
+2/13/10
+-added in sound for some things
+-need to add in a way to end the level (spent all day working on bugs created when I tried to do this the easy way)
+-discovered bug that if my laser hits an enemy laser I lose a life (b/c player laser is a child of player, which is of the cg_die cg)
+
+1/11/10
+-seem to have fixed the exit from level errors that had to do with th enemies being removed only partially
+-introduced error with menu screen not working right after exiting from a level
+-added bool to explode on removeEnemy, this way can remove enemies from the screen and not see them explode on the new screen
+
+1/10/10
+-add in new backgrounds, made level buttons look "selected", add in "Levels" button
+-added challenge class which will track score and lives across levels
+-introduced errors trying to exit from a game back to menu  
+
+1/3-8/10
+-wow, forgot to update this...
+here's what's not done:
+-new levels need to be added
+-game doesn't restart when you die
+-new enemies need to be added
+-all enemies need improved A.I.
+-sounds need to be added
+-credits need to be added
+-high scores need to be added
+ 
+
+1/2/10
+-enemy ships move and fire with an "on-rails" A.I.
+-collisions working on a satisfactory level
+
+1/1/10
+-collision detection working a bit better, but still not working fully
+-added explosion animation for enemy ships
+-enemy ships can fire bullets
+
+12/31/09
+-scrolling background
+-collision detection (not working very well, needs to be redone)
+-enemy ships in, but just sit there
+
+12/30/09
+-added the movement and laser firing, the movement is designed to allow a boosting function, follows deriv. of a log equation
+
+
+12/29/09
+-add animation class AnimatedSprite, am using it for all images except background

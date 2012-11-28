@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SCRIPT>
+
+<SCRIPTED NAME="theBooty">
+<ACTOR NAME="FIGHTER" REVEALAT="2">
+	<WAYPOINT X="600" Y="900" WAIT="0" ANGLE="180" MAX_SPEED="70" ACCELERATION="1" />
+	<WAYPOINT X="600" Y="900" WAIT="0" ANGLE="180" MAX_SPEED="3" ACCELERATION="1" />
+	<WAYPOINT X="600" Y="700" WAIT="14" ANGLE="180" MAX_SPEED="3" ACCELERATION="1" >
+		<TRANSMISSION AVATAR="ray" HEADER=" WARNING - Incoming Signal - ID: 0to2340in.01sec - Major Rayburn - " 
+		BODY="There it is Ace. Look at all that booty - over thirty tons of pure hotpants, and it's all ours." />
+	</WAYPOINT>
+	<WAYPOINT X="600" Y="650" WAIT="14" ANGLE="180" MAX_SPEED="1" ACCELERATION="1">
+		<TRANSMISSION AVATAR="computer" HEADER=" WARNING - Incoming Signal - ID: Local Computer - BENNY - " 
+		BODY="ALERT - my ethics chip is melting." />
+	</WAYPOINT>
+	<WAYPOINT X="600" Y="650" WAIT="12" ANGLE="180" MAX_SPEED="3" ACCELERATION="2" >
+		<TRANSMISSION AVATAR="ray" HEADER=" WARNING - Public Signal - ID: 0to2340in.01sec - Major Rayburn - " 
+		BODY="Attention cruiser Dakota, this is Major Raybrun. Yes, THE Major Rayburn. You're hotpants now belong to us." />
+	</WAYPOINT>	
+	<WAYPOINT X="600" Y="650" WAIT="10" ANGLE="180" MAX_SPEED="5" ACCELERATION="2" >
+		<TRANSMISSION AVATAR="frank" HEADER=" WARNING - Public Signal - ID: l8trman - Frank Kenworthy - " 
+		BODY="Awww man, give me a break, it's my first day!" />
+	</WAYPOINT>
+	<WAYPOINT X="600" Y="900" WAIT="0" ANGLE="180" MAX_SPEED="3" ACCELERATION="1" />
+</ACTOR>
+</SCRIPTED>
+
+</SCRIPT>
+
+
+
+
+
+
+

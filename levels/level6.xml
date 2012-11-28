@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LEVEL>
+<BACKGROUND>home.png</BACKGROUND>
+
+<PROP NAME="home/satellite.png" SPEED="5" STARTX="200" REPEAT="true" WAIT="2" ROTATION="0" DANGEROUS="true" />
+
+<SQUAD TITLE="FIGHTER" NUMBER="2" STARTX="400" WAIT="0"/>
+<SQUAD TITLE="GAURDIAN" NUMBER="3" STARTX="200" WAIT="-2"/>
+<SQUAD TITLE="DRONE" NUMBER="3" STARTX="400" WAIT="1"/>
+
+</LEVEL>

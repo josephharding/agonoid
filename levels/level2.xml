@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LEVEL>
+<BACKGROUND>cyclops.png</BACKGROUND>
+
+<PROP NAME="cyclops/blackhole.png" SPEED="2" STARTX="200" REPEAT="false" WAIT="30" ROTATION="0" DANGEROUS="false" />
+
+<TRANSMISSION AVATAR="computer" HEADER=" WARNING - Incoming Signal - ID: Local Computer - BENNY - " 
+BODY="Look, I'm sure it was just an empty threat. After all, pirates are theives and murderers, they're probably liars too." SQUAD="0" />
+
+<TRANSMISSION AVATAR="computer" HEADER=" WARNING - Incoming Signal - ID: Local Computer - BENNY - " 
+BODY="I'm sure we're safe, trust me, I'm a computer." SQUAD="0" />
+
+<TRANSMISSION AVATAR="computer" HEADER=" WARNING - Incoming Signal - Cortana? Psh...No! - " 
+BODY="Heh.... um... that was human error, no doubt." SQUAD="3"/>
+
+<SCRIPT NAME="pirateIntro" SQUAD="3" />
+<SCRIPT NAME="pirateSaved" SQUAD="9" />
+
+<SQUAD TITLE="FIGHTER" NUMBER="3" STARTX="300" WAIT="2"/>
+<SQUAD TITLE="BOMBER" NUMBER="2" STARTX="100" WAIT="-2"/>
+<SQUAD TITLE="FIGHTER" NUMBER="3" STARTX="250" WAIT="3"/>
+<SQUAD TITLE="FIGHTER" NUMBER="0" STARTX="250" WAIT="-1"/>
+
+<SQUAD TITLE="DEFENDER" NUMBER="5" STARTX="100" WAIT="1"/>
+<SQUAD TITLE="DEFENDER" NUMBER="5" STARTX="200" WAIT="1"/>
+<SQUAD TITLE="DEFENDER" NUMBER="5" STARTX="300" WAIT="1"/>
+<SQUAD TITLE="GUARDIAN" NUMBER="3" STARTX="150" WAIT="2"/>
+<SQUAD TITLE="DEFENDER" NUMBER="6" STARTX="100" WAIT="1"/>
+<SQUAD TITLE="FIGHTER" NUMBER="0" STARTX="250" WAIT="-1"/>
+
+</LEVEL>
